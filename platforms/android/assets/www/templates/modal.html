@@ -1,0 +1,80 @@
+<ion-modal-view class="scale-in"  style="
+width: 80%;
+    height: 70vh;
+    min-height: 0;
+    max-height: 100vh;
+    top: 15%;
+    left: 10%;
+    right: 10%;
+    bottom: 20%;
+    opacity: 0.9;
+    border-radius: 9px;
+    border-color: #3A4264!important;
+    " >
+       <!--  <ion-header-bar class="bar bar-header bar-positive">
+         
+          <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+        </ion-header-bar> -->
+
+
+        <ion-view style="background-color: #3A4264 !important;">
+
+  <div class = "row" style="">
+   <div class = "col col-10 first-row"></div>
+   <div class = "col col-80 col-center second-row"> 
+      
+              <p ng-click="closemodal()" style="color: #eaeaea;font-size: 5vw;">Cancel</p>
+   </div>
+   
+   <div class = "col col-10 third-row"></div>
+</div> 
+
+
+
+
+<div class = "row" style="margin-top: 2vh;">
+   <div class="col col-10"></div>
+   <div class = "col col-60"><p ng-model="modelname" style="font-size: 6vw;
+    color: #eaeaea;
+   
+    line-height: 4vh;">
+    {{modelname}}</p>
+
+    </div>
+   <div class = "col col-20" ng-class="class" style="height: 10vh;"></div>
+    <div class="col col-10"></div>
+   </div>
+
+
+
+
+
+   <div class = "row" style="margin-top: 3vh;padding: 0!important;">
+  
+   <div class = "col"> 
+   
+  <div class="video-container">
+<iframe ng-src="{{modelurl}}" frameborder="0" allowfullscreen></iframe>
+</div>    
+    
+   </div>
+   
+  
+</div> 
+
+
+
+
+<div class = "row" style="margin-top: 1vh;">
+   <div class = "col col-10 first-row"></div>
+   <div class = "col col-80 col-center second-row">
+
+  <p class="wrap" style="color: #eaeaea;font-size: 4vw;line-height: 3vh;" ng-model="modeltext">
+    {{modeltext}}</p> 
+   
+
+  </div>
+   <div class = "col col-10 third-row"></div>
+</div>
+        </ion-view>
+      </ion-modal-view>

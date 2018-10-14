@@ -1,0 +1,40 @@
+<ion-view>
+
+<ion-content style="background-color: #3a4264" ng-controller="AppCtrl">
+
+<!-- title/header -->
+<div class="row tabs-striped" style="height:8vh;">
+	<div class="bar bar-clear">
+   		<h2 class="title">QUIZZES</h2>
+	</div>
+</div>
+
+<!-- side-menu button -->
+<div class="row" style="height:15%;">
+    <div class="col col-20">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+    </div>
+    <div class="col col-70"></div>
+    <br />      
+</div>
+
+<!-- list of quizzes comes here -->
+<style>
+.quiz-item {
+    margin: 5px auto;
+    color: white;
+    border: none !important;
+}
+</style>
+<ion-content class="padding-left padding-right" style="margin-top:20vh; height:80vh;" ng-controller="QuizCtrl">
+    <div class="list" 
+        style="background-color:transparent;">
+        <div class="item quiz-item div-story" ng-repeat="value in items track by $index" ng-click="quiz({{items[$index][0]}})">
+            {{items[$index][1]}}
+        </div>
+    </div>
+</ion-content>
+
+</ion-content>
+</ion-view>

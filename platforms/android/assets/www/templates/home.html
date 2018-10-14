@@ -1,0 +1,447 @@
+ <ion-view ng-controller="AppCtrl" style="background: #3A4264">
+
+
+
+
+
+
+
+<style type="text/css">
+  
+.slidebox
+{
+  height: 100vh;
+}
+
+</style>
+
+
+
+
+
+<tab-slide-box>
+ 
+            <div class="tsb-icons" style="background-color: transparent;">
+              <div class="row tsb-ic-wrp">
+
+<div class="col col-30">
+  <a href="javascript:;" style="text-decoration: none;">
+     <p style="color: #eaeaea;font-size: 5vw;">ABOUTS US</p>           
+              </a>
+</div>
+
+<div class="col col-30">
+  <a href="javascript:;" style="text-decoration: none;">
+     <p style="color: #eaeaea;font-size: 5vw;">HOME</p>            
+              </a>
+</div>
+<div class="col col-30">
+  <a href="javascript:;" style="text-decoration: none;">
+           <p style="color: #eaeaea;font-size: 5vw;">VALUES</p>      
+              </a>
+</div>
+
+             
+              
+         
+            </div>
+            </div>
+
+
+            <div class="row" style="z-index: 5; position: absolute;padding: 0px;display: flex;
+  flex-direction: row;height: 1vh;
+  ">
+
+ <div class="col" style="background-color: #F04E65;"><p></p></div>
+ <div class="col" style="background-color: #00B2B0;"><p></p></div>
+ <div class="col" style="background-color: #FDBC4D;"><p></p></div>
+ <br style="clear: left;" />
+
+</div>
+              <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+                  
+
+
+
+                  <ion-slide class="slidebox">
+                     
+
+ <ion-view style="background: #3A4264;">
+      
+<div class="row" style="z-index: 5;
+    position: absolute;
+    flex-direction: row;
+    ">
+
+ <div class="col col-10"></div>
+ <div class="col col-10" style="height:2.5vh;background-color: #F04E65;-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+clip-path: polygon(50% 100%, 0 0, 100% 0);"><p></p></div>
+
+ 
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class = "row" style="margin-top: 3vh;">
+   <div class = "col col-20 first-row"><button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button></div>
+   <div class = "col col-60 col-center second-row"> <p class="about-us-text">ABOUT US</p></div>
+   <div class = "col col-20 third-row"> <button class="button-icon ion-android-calendar chat" ng-click="viewCalendar()">
+        </button></div>
+</div>
+
+
+
+
+       
+
+
+         
+
+
+<div class = "row">
+   <div class = "col first-row">  <p class="about-us-text2">Select a category and start learning about us.</p></div>
+</div>
+
+
+<div class = "row" style="height: 14vh;padding-right: 3vw;padding-left: 3vw" ng-click="ourstory()">
+   <div class = "col col-20 first-row div-story">
+<i class="ion-ios-book-outline about-us-icon" style="margin-left: 2vw;"></i></div>
+      <div class = "col col-70 second-row div-story"> <p class="aboutustext">Our Story</p>
+
+</div>
+</div>
+
+                     
+
+
+<div class = "row" style="height: 14vh;padding-right: 3vw;padding-left: 3vw" ng-click="vision()">
+   <div class = "col col-20 first-row div-vision"><img class="about-us-icon" src="img/vision.png" style="height: 6vh;margin-top: 2vh;">
+</div>
+      <div class = "col col-70 second-row div-vision"><p class="aboutustext">Vision/Mision</p></div>
+</div>
+
+
+<div class = "row" style="height: 14vh;padding-right: 3vw;padding-left: 3vw" ng-click="topteam()">
+   <div class = "col col-20 first-row div-team">   <i class="ion-ios-people-outline about-us-icon"></i>
+</div>
+      <div class = "col col-70 second-row div-team"><p class="aboutustext">Top Team</p></div>
+</div>
+
+
+<div class = "row" style="height: 14vh;padding-right: 3vw;padding-left: 3vw" ng-click="codeofconduct()">
+   <div class = "col col-20 first-row div-code"> <i class="ion-ios-checkmark-outline about-us-icon"></i>
+               </div>
+      <div class = "col col-70 second-row div-code"><p class="aboutustext">Code of Conduct</p></div>
+</div>
+
+
+
+</ion-view>
+
+
+
+
+
+
+                  </ion-slide >
+
+
+
+
+      <!--  Second Tab 
+      
+
+
+
+      -->           
+                  <ion-slide class="slidebox">
+                     
+   <ion-view class="" style="background: #3A4264;">
+    
+  
+      
+<div class="row" style="z-index: 5;
+    position: absolute;
+    flex-direction: row;
+    ">
+<div class="col col-20"></div>
+ <div class="col col-25"></div>
+ <div class="col col-10" style="height:2.5vh;background-color: #00B2B0;-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+clip-path: polygon(50% 100%, 0 0, 100% 0);"><p></p></div>
+
+</div>
+
+  
+
+    <div class="row"  style="height:5%;margin-top: 3vh;">
+    <div class="col col-20">
+      <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+</div>
+<div class="col col-60"></div>
+<div class="col col-20">
+        <button class="button-icon ion-android-calendar chat" ng-click="viewCalendar()">
+        </button>
+</div>
+</div>
+
+
+
+<div class="row" >
+<div class="col col-25"></div>
+
+ <div class="col col-50">
+  <a class="icon-circle-large-home img-centered">
+          <img src="img/profilepic.png" class="profile-home img-centered">
+          </a>
+         
+      <div class="home-level img-centered">
+        <p class="home-level-text" ng-model="level" style="font-size: 9.5vw;
+    padding-top: 1vh;">Level {{level}}</p>
+      
+       </div>   
+</div> 
+<div class="col col-25"></div> 
+<!-- <div class="col col-10"></div> -->
+</div>
+
+
+
+<div class="row">
+
+<div class="col col-10">
+       
+</div>
+<div class="col col-80">
+  
+        <p class="home-name-text" ng-model="emp_name">{{emp_name}}</p>
+           <p class="home-designation-text" ng-model="emp_desig">{{emp_desig}}</p>
+         
+      
+</div>
+<div class="col col-10">
+     
+</div>
+</div>
+
+
+<div class="row">
+
+<div class="col col-20">
+       
+</div>
+<div class="col col-60">
+  
+        <p class="home-miles-text" ng-click="emp_info('1')" ng-model="miles">Descon Miles: 1.3K</p>
+         
+      
+</div>
+<div class="col col-20">
+     
+</div>
+</div>
+
+
+
+<div class="row">
+
+<div class="col col-30">
+        <p class="home-miles-text2">Next Milestone</p> 
+</div>
+<div class="col col-50"  >
+      
+       <progress id="progressbar" max="100" value="50" class="progress"> </progress> 
+     
+    </div>
+<div class="col col-20">
+       <p class="home-miles-text2" style="padding-top: 5px;">50%</p>
+</div>
+</div>
+
+<div class="row" style="margin-bottom: 2vh;">
+
+<div class="col col-10">
+       
+</div>
+  <div class="col col-80 home-rewards">
+        <p class="home-rewards-text" ng-click="nextlevel()" ng-model="nextlevel">Check My Rewards</p>
+       </div>  
+<div class="col col-10">
+     
+</div>
+</div>
+
+<div class="row">
+
+<div class="col col-10">
+       
+</div>
+   <div class="col col-80 home-next-level">
+        <p class="home-next-level-text" ng-click="nextlevel()" ng-model="nextlevel">Achieve Next Level</p>
+       </div> 
+<div class="col col-10">
+     
+</div>
+</div>
+
+</ion-view>
+
+
+
+
+                  </ion-slide>
+
+
+
+<!-- 
+
+        Third Tab
+
+ -->
+
+
+                  <ion-slide class="slidebox">
+                      
+
+
+
+
+                    <ion-view style="background: #3A4264;">
+
+
+
+<div class="row" style="z-index: 5;
+    position: absolute;
+    flex-direction: row;
+   ">
+<div class="col col-80"></div>
+ <div  class="col col-10" style="height:2.5vh;background-color: #FDBC4D;-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+clip-path: polygon(50% 100%, 0 0, 100% 0);"><p></p></div>
+<div class="col col-10"></div>
+</div>
+
+
+
+
+
+    <div class = "row" 
+style="margin-top: 3vh;height: 12vh;">
+   <div class = "col col-20 first-row"><button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button></div>
+   <div class = "col col-60 col-center second-row"> <p class="ourvalues-text">OUR VALUES</p></div>
+   <div class = "col col-20 third-row"> <button class="button-icon ion-android-calendar chat" ng-click="viewCalendar()">
+        </button></div>
+</div>
+
+
+<div class = "row">
+   <div class = "col first-row">  <p class="about-us-text2">Select a category and start learning about our values.</p></div>
+</div>
+
+  
+
+
+<div class = "row" style="padding-right: 3vw;padding-left: 3vw" ng-click="professionalism()">
+      <div class = "col col-70 second-row div-pro">  <p class="values-text">Professionalism</p>
+</div>
+   <div class = "col col-20 first-row div-pro">
+ <img class="values-icon" src="img/pro.png" width="50px" style="padding-top: 3%"></img>
+</div>
+ 
+</div>
+
+                     
+
+
+<div class = "row" style="padding-right: 3vw;padding-left: 3vw" ng-click="teamwork();">
+  <div class = "col col-70 second-row div-teamwork">
+        <p class="values-text">Team Work</p>
+
+      </div>
+   <div class = "col col-20 first-row div-teamwork">
+   <img class="values-icon" src="img/teamwork.png" width="50px" style="padding-top: 3%"></img>
+</div>
+      
+</div>
+ 
+
+<div class = "row" style="padding-right: 3vw;padding-left: 3vw" ng-click="communication();">
+     <div class = "col col-70 second-row div-comm">
+        <p class="values-text">Open Communication </p>
+      </div>
+   <div class = "col col-20 first-row div-comm"> 
+   
+
+              <i class="ion-android-chat values-icon"></i>
+</div>
+    
+</div>
+
+
+<div class = "row" style="padding-right: 3vw;padding-left: 3vw" ng-click="improvement()">
+   <div class = "col col-70 second-row div-improve">
+           <p class="values-text">Continuous Improvement</p>
+      </div>
+   <div class = "col col-20 first-row div-improve"> 
+            <img class="values-icon" src="img/improve.png" width="50px" style="padding-top: 3%"></img>
+                  </div>
+      
+</div>
+
+
+<div class = "row" style="padding-right: 3vw;padding-left: 3vw" ng-click="leadership()">
+  
+      <div class = "col col-80 second-row div-leader">
+           <p class="values-text">Leadership</p>
+      </div>
+      <div class = "col col-20 first-row div-leader"> 
+        <img class="values-icon" src="img/leader.png" width="50px" style="padding-top: 3%"></img>
+      </div>
+</div>
+
+
+<div class = "row" style="padding-right: 3vw;padding-left: 3vw" ng-click="safety()">
+     <div class = "col col-70 second-row div-comm" style="background-color:  #F04E65 !important;">
+        <p class="values-text">Safety</p>
+      </div>
+   <div class = "col col-20 first-row div-comm" style="background-color:  #F04E65 !important;"> 
+   
+
+              <i class="ion-locked values-icon" ></i>
+</div>
+    
+</div>
+
+
+
+
+
+</ion-view>
+
+
+                  </ion-slide>
+            
+
+              </ion-slide-box>
+            </tab-slide-box>
+
+<!-- </ion-content>
+ -->
+</ion-view>
+
+
+
+
+
+

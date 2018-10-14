@@ -1,0 +1,85 @@
+ <ion-view>
+  <ion-content  ng-controller="AppCtrl" style="background: #3A4264">
+ 
+
+
+<!-- <div class="row" style="height: 15%;">
+        
+        <div class="col col-20">
+        <button class="button-icon ion-ios-arrow-back ion-back">
+        </button>
+</div> -->
+
+<div class="row" style="height: 15%">
+<div class="col col-20">
+<button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+</div>
+
+<div class="col col-60"></div>
+<div class="col col-20">
+
+        <button class="button-icon ion-ios-search chat" style="margin-top: 0vh;">
+        </button>
+</div>
+</div>
+  
+
+ 
+     <div class="row">
+     <div class="col col-10"></div>
+     <div class=" col col-80" style="text-align: center;">
+          <p class="breach-text">REPORT A BREACH</p></div>
+<div class="col col-10"></div>
+</div>
+
+
+
+     <div class="row">
+     <div class="col col-10"></div>
+     <div class=" col col-80" style="text-align: center;">
+         <input  id="noname" type="checkbox" ng-disabled="checked1" ng-model="checked">
+         <label class="breach-check" for="noname">Report Anonymously</label>
+        </div>
+<div class="col col-10"></div>
+</div>
+
+
+
+     <div class="row">
+     <div class="col col-10"></div>
+     <div class=" col col-80" style="text-align: center;"  >
+           <input type="checkbox" id="yesname" ng-disabled="checked" ng-model="checked1">
+        <label class="breach-check2" for="yesname" >Report With Your Name</label> </div>  
+<div class="col col-10"></div>
+</div>
+
+      
+
+     <div class="row">
+     <div class="col col-10"></div>
+     <div class=" col col-80" style="text-align: center;">
+          <input class="breach-input" ng-model="breach_text" type="text" placeholder="Your Report Goes Here...">
+         
+       </input>
+          </div>  
+<div class="col col-10"></div>
+</div>
+
+
+
+     <div class="row">
+     <div class="col col-10"></div>
+     <div class=" col col-80" style="text-align: center;">
+          <div class="breach-report">
+        <p class="breach-report-text" ng-click="breach()">Report</p>
+       </div>  
+          </div>  
+<div class="col col-10"></div>
+</div>
+
+
+
+</ion-content>
+
+</ion-view>

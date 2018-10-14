@@ -1,0 +1,126 @@
+<ion-view ng-controller="AppCtrl" style="background: #3A4264;background-size: cover;">
+<!--  <ion-content >
+ -->  
+ 
+
+<div class="row">
+
+<div class="col col-20">
+        <button class="button-icon ion-ios-arrow-back ion-back" ng-click="back()">
+        </button>
+</div>
+<div class="col col-60" style="padding-right: 5vw;padding-left: 5vw;">
+<!--   <div class="row" style="">
+ --><!-- <div class="col col-25"></div>
+ -->
+ <div class="col">
+  <a class="icon-circle-large-home img-centered">
+          <img src="img/profilepic.png" class="profile-home img-centered">
+          </a>
+         
+      <div class="home-level img-centered">
+        <p class="home-level-text" ng-model="recog_emp_level" style="font-size: 9.5vw;
+    padding-top: 1vh;">Level {{recog_emp_level}}</p>
+      
+       </div>   
+</div>  
+<!-- <div class="col col-25"></div> -->
+<!-- </div>
+ -->
+</div>
+<div class="col col-20">
+        <button class="button-icon ion-ios-search chat" style="margin-top: 0vh;">
+        </button>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="row">
+
+<div class="col col-20">
+       
+</div>
+<div class="col col-60">
+  
+        <p class="recognize-name-text" ng-model="recog_emp_name">{{recog_emp_name}}</p>
+           <p class="recognize-designation-text" ng-model="recog_emp_desig">{{recog_emp_desig}}</p>
+         
+      
+</div>
+<div class="col col-20">
+     
+</div>
+</div>
+  
+
+ <div class="row" style="">
+     <div class="col col-10"></div>
+      <div class="col col-40 div-recognize" id="pro" ng-click="changecolor('pro','pro_text');recog_atrr('Professionalism')">
+        <p class="div-recognize-text" id="pro_text" ng-model="level">Professionalism</p>
+       </div>  
+
+
+       <div class=" col col-40 div-recognize" id="teamwork" ng-click="changecolor('teamwork','teamwork_text');recog_atrr('Team Work')">
+        <p class="div-recognize-text" id="teamwork_text" ng-model="level">Team Work</p>
+       </div>  
+        <div class="col col-10"></div>
+</div>
+
+<div class="row" style="">
+ <div class="col col-10"></div>
+       <div class="col col-40 div-recognize" id="comm" ng-click="changecolor('comm','comm_text');recog_atrr('Communication')">
+        <p class="div-recognize-text" id="comm_text" ng-model="level">Communication</p>
+       </div>  
+
+
+       <div class="col col-40 div-recognize" id="impro" ng-click="changecolor('impro','impro_text');recog_atrr('Improvement')">
+        <p class="div-recognize-text" id="impro_text" ng-model="level">Improvement</p>
+       </div>  
+        <div class="col col-10"></div>
+</div>
+
+
+<div class="row" style="">
+ <div class="col col-10"></div>
+      <div class="col col-40 div-recognize" id="leader" ng-click="changecolor('leader','leader_text');recog_atrr('Leadership')">
+        <p class="div-recognize-text" id="leader_text" ng-model="level">Leadership</p>
+       </div>  
+
+
+       <div class="col col-40 div-recognize" id="expert" ng-click="changecolor('expert','expert_text');recog_atrr('Technical Expert')">
+        <p class="div-recognize-text" id="expert_text" ng-model="level">Technical Expert</p>
+       </div>  
+ <div class="col col-10"></div>
+</div>
+
+
+
+<div class="row" style="height: 25vh;
+  
+   ">
+<div class="col col-10"></div>
+<div class="col col-80">
+       <input class="recognize-input" type="text" placeholder="Your Message Goes Here...">
+         
+       </input>
+</div>
+<div class="col col-10"></div>
+</div>
+
+
+<div class="row" ng-click='submit_recog()'>
+<div class="col col-20"></div>
+       <div class="col col-60 div-recognize7">
+        <p class="div-recognize7-text" ng-model="level">Submit</p>
+       </div>  
+<div class="col col-20"></div>
+</div>
+
+
+<!-- </ion-content>
+ --></ion-view>

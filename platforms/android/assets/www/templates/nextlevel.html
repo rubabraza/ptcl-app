@@ -1,0 +1,294 @@
+
+ <ion-view ng-controller="AppCtrl" style="background: #3A4264">
+
+
+
+
+
+
+
+<style type="text/css">
+  
+.slidebox
+{
+  height: 100vh;
+}
+
+</style>
+
+
+
+
+
+<tab-slide-box>
+ 
+            <div class="tsb-icons" style="background-color: transparent;">
+              <div class="row tsb-ic-wrp">
+
+<div class="col col-50">
+  <a href="javascript:;" style="text-decoration: none;">
+     <p style="color: #eaeaea;font-size: 4vw;">CHECK MY REWARDS</p>           
+              </a>
+</div>
+
+<div class="col col-50">
+  <a href="javascript:;" style="text-decoration: none;">
+     <p style="color: #eaeaea;font-size: 4vw;">ACHIEVE NEXT LEVEL</p>            
+              </a>
+</div>
+</div>
+</div>
+
+
+ <div class="row" style="z-index: 5; position: absolute;padding: 0px;display: flex;
+  flex-direction: row;
+  height: 1vh;">
+
+ <div class="col" style="background-color: #F04E65;"><p></p></div>
+ <div class="col" style="background-color: #FDBC4D;"><p></p></div>
+ <br style="clear: left;" />
+
+</div>
+
+<ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)">
+                  
+
+  <ion-slide class="slidebox">
+                     
+  <ion-view ng-controller="AppCtrl" style="background: #3A4264;">
+      
+
+
+
+<div class="row" style="z-index: 5;
+    position: absolute;
+    flex-direction: row;
+    top: -1vh;">
+
+ <div class="col col-20"></div>
+ <div class="col col-10" style="background-color: #F04E65;-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+clip-path: polygon(50% 100%, 0 0, 100% 0);"><p></p></div>
+
+ 
+
+</div>
+
+
+
+
+
+<div class="row" style="height: 12vh;
+    margin-top: 2vh;">
+    <div class="col col-20">
+     <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+        </div>
+        <div class="col col-60"></div>
+      <div class="col col-20">
+        <button class="button-icon ion-android-calendar chat">
+        </button>
+        </div>
+</div>
+
+
+<div class="row">
+      <div class="col col-10"> </div>
+      <div class="col col-80 text-center">
+       <p class="reward-text">CONGRATULATIONS</p>
+       </div>
+        <div class="col col-10"></div>
+</div>
+         
+ <div class="row" style="height: 6vh;">
+         <div class="col col-100  text-center"> <p class="reward-text2">YOU HAVE ACHIEVED THE NEXT LEVEL.</p>
+</div>
+</div>
+
+
+
+          <div class="row" style="height: 50vh;">
+          <div class="col-10"></div>
+          <div class="col col-80 text-center" style="background: url('img/reward.png')no-repeat center center;
+    background-size: 96% 96%;
+          ">
+         <!-- <img src="img/reward.png" style="display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;" > -->
+         <p class="reward-cup-text caption">LEVEL</p>
+
+          </div>
+<div class="col col-10"></div>
+</div>
+      
+      <div class="row padding">
+         <p class="col reward-cup-text2">You have won a movie ticket<br><i class="ion-ios-film-outline" style="font-size: 30px;"></i> </p>
+      </div>
+
+</ion-view>
+
+
+
+
+                  </ion-slide>
+
+
+
+<!-- 
+
+        Third Tab
+
+ -->
+
+
+                  <ion-slide class="slidebox">
+                      
+
+
+
+
+         <ion-view ng-controller="AppCtrl" style="background: #3A4264;">
+   
+<!-- button-icon ion-ios-chatbubble-outline chat -->
+  
+
+
+<div class="row" style="z-index: 5;
+    position: absolute;
+    flex-direction: row;
+   top: -1vh">
+<div class="col col-70"></div>
+ <div  class="col col-10" style="background-color: #FDBC4D;-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+clip-path: polygon(50% 100%, 0 0, 100% 0);"><p></p></div>
+<div class="col col-20"></div>
+</div>
+
+
+
+   
+
+<div class="row" style="height: 11vh;
+    margin-top: 2vh;">
+<div class="col col-20">
+      <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+</div>
+<div class="col col-60">
+          <p class="about-us-text" style="padding-top:12%;">NEXT LEVEL</p>
+</div>
+
+<div class="col col-20">
+   
+     <button class="button-icon ion-android-calendar chat">
+        </button>
+</div>
+
+</div>
+
+
+<div class="row">
+<div class="col col-10"></div>
+        <div class="col  col-90">  <p class="about-us-text2">This is where you stand.</p> </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col col-20"></div>
+  
+       <div class="col col-60 nextlevel-level">
+        <p class="home-level-text" ng-model="level" style="font-size: 30px;
+    padding-top: 5px;">Level {{level}}</p>
+       </div>   
+
+  <div class="col col-20"></div>
+</div>
+
+
+<div class="row">
+ 
+
+        <div class="col">  <p class="container-text">To achieve next level you will need.</p>     </div>
+</div>
+
+
+
+
+
+<div class="row" style="height: 14vh;">
+   <div class="col col-10"></div>
+   <div class="col  div-story" ng-click="viewQuizzes()">
+      <div class="col col-20"><i class="ion-ios-help-outline nextlevel-icon"></i></div>
+      <div class="col col-70"><p class="nextleveltext">Quizes</p></div>  
+      <div class="col col-10" style="padding-right: 10vw;padding-top: 2vh;">
+          <div class="nextlevel-circle"><p ng-model="level_quiz"  style="font-size:8vw;color: #3A4264;">{{level_quiz}}</p>
+          </div>
+      </div>
+    </div>
+   <div class="col col-10"></div>
+</div>
+
+
+<div class="row" style="height: 14vh;">
+ <div class="col col-10"></div>
+ <div class="col col-80 div-vision" ng-click="recognizelist()" >
+  
+    <div class="col col-20"><i class=" ion-thumbsup nextlevel-icon"></i></div>
+    <div class="col col-70"><p class="nextleveltext">Likes</p></div>  
+    <div class="col col-10" style="padding-right: 10vw;padding-top: 2vh;">
+          <div class="nextlevel-circle"><p ng-model="level_likes"  style="font-size:8vw;color: #3A4264;">{{level_likes}}</p>
+          </div>
+      </div>  </div>
+ <div class="col col-10"></div>
+</div>
+
+
+
+<div class="row" style="height: 14vh;">
+ <div class="col col-10"></div>
+ <div class="col col-80 div-team" ng-click="activity()" >
+
+    <div class="col col-20"><i class="ion-clipboard nextlevel-icon"></i></div>
+    <div class="col col-70"><p class="nextleveltext">Activity</p></div>  
+    <div class="col col-10" style="padding-right: 10vw;padding-top: 2vh;">
+          <div class="nextlevel-circle"><p ng-model="level_activity" style="font-size:8vw;color: #3A4264;">{{level_activity}}</p>
+          </div>
+      </div>
+
+  </div>
+ <div class="col col-10"></div>
+</div>
+
+
+<div class="row" style="height: 14vh;">
+  <div class="col col-10"></div>
+  <div class="col col-80 div-code" ng-click="share()" >                             
+    <div class="col col-20"><i class="ion-android-share-alt nextlevel-icon"></i></div>
+    <div class="col col-70"><p class="nextleveltext">Share Example</p></div>  
+    <div class="col col-10" style="padding-right: 10vw;padding-top: 2vh;">
+          <div class="nextlevel-circle"><p ng-model="level_share" style="font-size:8vw;color: #3A4264;">{{level_share}}</p>
+          </div>
+      </div>
+  </div>
+  <div class="col col-10"></div>
+</div>
+
+
+</ion-view>
+
+
+                  </ion-slide>
+            
+
+              </ion-slide-box>
+            </tab-slide-box>
+
+<!-- </ion-content>
+ -->
+</ion-view>
+
+
+
+
+
+

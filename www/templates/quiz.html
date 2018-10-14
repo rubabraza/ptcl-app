@@ -1,0 +1,237 @@
+<ion-view style="background-color: #3a4264" ng-controller="AppCtrl">
+
+<!-- title/header -->
+<style>
+.quiz-header {
+    background-color: #F04E65 !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    padding: 5px;
+    height: 44px;
+}
+.title-text {
+    font-size: 17px;
+    font-weight: 500;
+    color: white;
+}
+.time-text {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+}
+span {
+    display: inline-block;
+    vertical-align: center;
+    line-height: normal;
+}
+.question-text {
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+}
+.radio-label {
+    background-color: #4db591;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+    width: 80% !important;    
+}
+input[type=radio] { 
+  visibility: hidden;
+  /*position: absolute;*/
+}
+.radio-button {     
+  vertical-align: middle;
+  display: inline-block;
+  width:  40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 10px solid #4db591;
+  background: white;
+  z-index: 5;
+}
+.radio-button.check {     
+  display: block;
+  width:  12px;
+  height: 12px;
+  border-radius: 100%;
+  background: white;
+  z-index: 5;
+  margin-left: 3.5px;
+  margin-top: -15px;
+}
+.radio-button .check::before {
+  display: block;
+    content: '';
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  margin-left: 3.5px;
+  margin-top: -15px;
+}
+.input[type=radio]:checked ~ .check {
+  background: black;
+  z-index: 10;
+}
+input[type=radio]:checked ~ .check::before{
+  background: black;
+}
+.tail {
+    width:10%;
+    background: url('img/tail.png') no-repeat right;
+    background-size: contain;
+}
+.head {
+    width:10%;
+    background: url('img/head.png') no-repeat left;
+    background-size: contain;
+}
+.options {
+    min-width: 95vw;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+.options td {
+    height: 36px;
+    vertical-align: middle;
+}
+.correct {
+    filter: brightness(100%) contrast(120%) saturate(8);
+    -webkit-filter: brightness(100%) contrast(120%) saturate(8);
+    
+}
+.wrong {
+    filter: brightness(100%) contrast(120%) hue-rotate(205deg) saturate(10);
+    -webkit-filter: brightness(100%) contrast(120%) hue-rotate(205deg) saturate(10);
+
+}
+.scorecard {
+    width: 90%;
+    background-color: #F04E65;
+    border-radius: 10px;
+    text-align: center;    
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 62px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-bottom: 15px;
+}
+.scorecard p {   
+    font-size: 62px;
+    font-weight: 500;
+    color: white;
+}
+.hidden {
+    display: none;
+}
+.button-gray {
+    border: none;
+    border-radius: 3px;
+    background-color: #3a4264;
+    color: white;
+    text-align: center;
+    width: 40%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 40px;
+}
+</style>
+<div ng-controller="QuizCtrl">
+<div class="header">
+    <div class="bar" style="background-image: none;">
+    <div class="quiz-header">
+        <div class="col col-10" style="padding: 0">
+            <a class="icon-circle-large-recognize-picture" style="box-shadow:none;">
+            <img src="img/profilepic.png" class="profile-menu">
+            </a>
+        </div>
+        <div class="title-text col col-90 padding">
+            {{score}} points
+        </div>
+        <h2 class="title title-right">{{questionNumber}}/{{questions.length}}</h2>
+    </div>
+    </div>
+</div>
+
+
+<!-- list of quizzes comes here -->
+
+ <div class="row" style="height: 20vh; padding: 0; position: absolute; top: 44px;">
+    <div style="background-color: #FF768D !important; margin-left: 10px; margin-right: 10px; width: 100%">
+    <h2 class="time-text"><span>{{timer}}</span></h2>
+    </div>
+</div>
+<table style="position: absolute; top: 30vh; width: 100%; height: 100%">
+    <tr>
+        <td style="height: 1vh;">
+            <div class="row" style="height: 15vh !important">
+                <div class="col col-100">
+                    <h2 class="question-text">{{questions[questionNumber][0]}}</h2>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <!-- <div class="padding"> -->
+            <div class="row padding hello">
+                <form name="quiz">
+                <table class="options" cell-spacing="0">
+                    <tr ng-repeat="option in random track by $index">
+                        <td >
+                            <label class="radio-button">
+                                <input type="radio" name="group1" value="{{$index+1}}" ng-click="nextQuestion($event)"/>
+                                <div class="check"></div>
+                            </label>
+                        </td>
+                        <td class="tail">
+                        </td>
+                        <td class="radio-label ">
+                       {{questions[questionNumber][$index+1]}}
+                        </td>
+                        <td class="head ">
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+            <div class="row padding">
+                <div id="score" class="scorecard hidden">
+                        You Scored:<br/>
+                        <p>
+                            {{score}}
+                        </p>
+                        <button class="button-gray" ng-click="returnToMenu()">Go Back</button>
+                </div>
+            </div>
+            <!-- </div> -->
+        </td>
+    </tr>
+</table>
+</div>
+
+</ion-view>

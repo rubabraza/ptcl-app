@@ -1,0 +1,488 @@
+
+<ion-view hide-back-button="true" ng-app="starter" ng-controller="AppCtrl">
+
+
+
+<div class="row" style="z-index: 5; position: absolute;padding: 0px;display: flex;
+  flex-direction: row;
+  min-height: 9.5vh;">
+
+ <div class="col" style="background-color: #F04E65;"><p></p></div>
+ <div class="col" style="background-color: #00B2B0;"><p></p></div>
+ <div class="col" style="background-color: #FDBC4D;"><p></p></div>
+ <br style="clear: left;" />
+
+</div>
+
+
+
+
+<ion-tabs class="tabs-striped tabs-top">
+    <ion-tab title="GENESIS" ng-controller="AppCtrl">
+       
+  <ion-view style="background: #3A4264; top: 8vh;">
+      
+<div class="row" style="z-index: 5;
+    position: absolute;
+    flex-direction: row;
+    ">
+
+ <div class="col col-10"></div>
+ <div class="col col-10" style="height:2.5vh;background-color: #F04E65;-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+clip-path: polygon(50% 100%, 0 0, 100% 0);"><p></p></div>
+
+ 
+
+</div>
+
+
+
+<div class = "row" style="margin-top: 3vh;">
+   <div class = "col col-20 first-row"><button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button></div>
+
+   <div class = "col col-70 col-center second-row" style="display: flex;
+    flex-direction: row;
+    background-color: #505a7c;
+   margin-top: 2vh;
+    border-color: #505a7c;
+    border-radius: 10px;
+    height: 6vh;">
+
+    <div class="history" ng-click="history()" ng-style="history_style">
+ 
+ <p style="font-size: 4vw;color: #eaeaea;line-height: 4vh;">HISTORY</p>
+
+</div>
+
+  <div class="video" ng-click="video()" ng-style="video_style">
+
+ <p style="font-size: 4vw;color: #eaeaea;line-height: 4vh;">VIDEOS</p>
+</div>
+
+</div>
+
+   <div class = "col col-10 third-row"></div>
+</div>
+
+
+
+<div class = "row" style="margin-top: 1vh;" ng-hide="history_hide">
+   <div class = "col col-10 first-row"></div>
+   <div class = "col col-80 col-center second-row">
+
+  <p class="wrap" style="color: #eaeaea;font-size: 4.5vw;line-height: 3vh;">
+    Descon Engineering Limited is an integrated engineering services and manufacturing company operating in Pakistan and the Middle East. We are in the business of delivering client-specific solutions for projects related to Energy, Infrastructure and Process industry. The integrated package of services encompasses engineering, procurement, manufacturing, construction, commissioning and maintenance.</p> 
+   <p style="color: #eaeaea;font-size: 4.5vw;line-height: 3vh;"> We are a multinational company renowned in the region for its quality, safety and on-time delivery of projects and products. All the faculties required to deliver turnkey projects, reside within the company. This unique strength enables us to provide solutions as EPCC (Engineering, Procurement, Construction and Commissioning) services provider to a host of international clients 
+    </p>
+
+  </div>
+   <div class = "col col-10 third-row"></div>
+</div> 
+
+
+<div ng-hide="video_hide">
+<div class = "row" style="margin-top: 1vh;" >
+   <div class = "col col-10 first-row"></div>
+   <div class = "col col-80 col-center second-row"> 
+   
+
+    
+        <!--   <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer"><source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/></video> -->
+  <div class="video-container">
+<iframe src="http://www.youtube.com/embed/shGhZzJ7o-g?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>    
+    
+
+
+
+   </div>
+   
+   <div class = "col col-10 third-row"></div>
+</div>         
+
+
+
+
+
+
+<div class = "row" style="">
+   <div class = "col col-10 first-row"></div>
+   <div class = "col col-80 col-center second-row">
+<p style="font-size:7vw;color: #eaeaea;margin-bottom: 1vh;">Our Genesis</p>
+
+  </div>
+   <div class = "col col-10 third-row"></div>
+</div> 
+
+
+
+
+
+<div class = "row" style="">
+   <div class = "col col-10"></div>
+   <div class = "col col-20" style="display: flex;">
+<div class="icon-circle"><i class="ion-thumbsup" style="font-size:8vw;color: #eaeaea;"></i></div>
+<p style="
+    color: #eaeaea;
+    padding-top: 1vh;
+    font-size: 6vw;padding-left: 0.5vw;">45</p>
+
+  </div>
+
+   <div class = "col col-10"></div>
+   <div class = "col col-20" style="display: flex;">
+   <div class="icon-circle"><i class="ion-ios-chatbubble" style="font-size:8vw;color: #eaeaea;"></i></div>
+
+<p style="
+    color: #eaeaea;
+    padding-top: 1vh;
+    font-size: 6vw;padding-left: 0.5vw;"> 5</p>
+
+  </div>
+
+   <div class = "col col-10"></div>
+   <div class = "col col-20" style="display: flex;">
+<div class="icon-circle"><i class="ion-share" style="font-size:8vw;color: #eaeaea;"></i></div>
+
+<p style="
+    color: #eaeaea;
+    padding-top: 1vh;
+    font-size: 6vw;padding-left: 0.5vw;"> 15</p>
+
+  </div>
+
+
+   <div class = "col col-10"></div>
+</div> 
+
+
+
+
+
+<div class = "row" style="margin-top: 1vh;">
+   <div class = "col col-10 first-row"></div>
+   <div class = "col col-80 col-center second-row">
+
+  <p class="wrap" style="color: #eaeaea;font-size: 4vw;line-height: 3vh;">
+    To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want From the different galleries.</p> 
+   
+
+  </div>
+   <div class = "col col-10 third-row"></div>
+</div>
+
+</div>
+
+</ion-view>
+
+    </ion-tab>
+
+
+
+
+
+
+
+
+    <ion-tab  title="JOURNEY" ng-app="starter" ng-controller="AppCtrl" >
+      <ion-view class="" style="background: #3A4264;top: 8vh;">
+    
+  
+      
+<div class="row" style="z-index: 5;
+    position: absolute;
+    flex-direction: row;
+    ">
+<div class="col col-20"></div>
+ <div class="col col-25"></div>
+ <div class="col col-10" style="height:2.5vh;background-color: #00B2B0;-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+clip-path: polygon(50% 100%, 0 0, 100% 0);"><p></p></div>
+
+</div>
+
+  
+
+   <!--  -->
+
+
+
+
+<div class = "row" style="margin-top: 3vh;">
+   <div class = "col col-20 first-row"><button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button></div>
+
+   <div class = "col col-70 col-center second-row" style="display: flex;
+    flex-direction: row;
+    background-color: #505a7c;
+   margin-top: 2vh;
+    border-color: #505a7c;
+    border-radius: 10px;
+    height: 6vh;">
+
+    <div class="history" ng-click="history()" ng-style="history_style">
+ 
+ <p style="font-size: 4vw;color: #eaeaea;line-height: 4vh;">KEY MILESTONE</p>
+
+</div>
+
+  <div class="video" ng-click="video()" ng-style="video_style">
+
+ <p style="font-size: 3.7vw;color: #eaeaea;line-height: 4vh;">FUTURE OUTLOOK</p>
+</div>
+
+</div>
+
+   <div class = "col col-10 third-row"></div>
+</div>
+
+
+
+<div class = "row" style="margin-top: 1vh;" ng-hide="history_hide">
+   <div class = "col col-10 first-row"></div>
+   <div class = "col col-80 col-center second-row">
+
+   <img src="img/timeline.jpg" style="display: block;
+    max-width: 100vh;
+    width: 75vw;
+    height: 70vh;">
+
+  </div>
+   <div class = "col col-10 third-row"></div>
+</div> 
+
+
+<div ng-hide="video_hide">
+<div class = "row" style="margin-top: 1vh;">
+   <div class = "col col-10 first-row"></div>
+   <div class = "col col-80 col-center second-row"> 
+   
+
+    
+        <!--   <video controls="controls" preload="metadata" webkit-playsinline="webkit-playsinline" class="videoPlayer"><source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/></video> -->
+  <div class="video-container">
+<iframe src="http://www.youtube.com/embed/shGhZzJ7o-g?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>    
+    
+
+<style type="text/css">
+
+
+</style>
+
+   </div>
+   
+   <div class = "col col-10 third-row"></div>
+</div>         
+
+
+
+
+
+
+<div class = "row" style="">
+   <div class = "col col-10 first-row"></div>
+   <div class = "col col-80 col-center second-row">
+<p style="font-size:7vw;color: #eaeaea;margin-bottom: 1vh;">Future Outlook</p>
+
+  </div>
+   <div class = "col col-10 third-row"></div>
+</div> 
+
+
+
+
+
+<div class = "row" style="">
+   <div class = "col col-10"></div>
+   <div class = "col col-20" style="display: flex;">
+<div class="icon-circle"><i class="ion-thumbsup" style="font-size:8vw;color: #eaeaea;"></i></div>
+<p style="
+    color: #eaeaea;
+    padding-top: 1vh;
+    font-size: 6vw;padding-left: 0.5vw;">45</p>
+
+  </div>
+
+   <div class = "col col-10"></div>
+   <div class = "col col-20" style="display: flex;">
+   <div class="icon-circle"><i class="ion-ios-chatbubble" style="font-size:8vw;color: #eaeaea;"></i></div>
+
+<p style="
+    color: #eaeaea;
+    padding-top: 1vh;
+    font-size: 6vw;padding-left: 0.5vw;"> 5</p>
+
+  </div>
+
+   <div class = "col col-10"></div>
+   <div class = "col col-20" style="display: flex;">
+<div class="icon-circle"><i class="ion-share" style="font-size:8vw;color: #eaeaea;"></i></div>
+
+<p style="
+    color: #eaeaea;
+    padding-top: 1vh;
+    font-size: 6vw;padding-left: 0.5vw;"> 15</p>
+
+  </div>
+
+
+   <div class = "col col-10"></div>
+</div> 
+
+
+
+
+
+<div class = "row" style="margin-top: 1vh;">
+   <div class = "col col-10 first-row"></div>
+   <div class = "col col-80 col-center second-row">
+
+  <p class="wrap" style="color: #eaeaea;font-size: 4vw;line-height: 3vh;">
+    To make your document look professionally produced, Word provides header, footer, cover page, and text box designs that complement each other. For example, you can add a matching cover page, header, and sidebar. Click Insert and then choose the elements you want From the different galleries.</p> 
+   
+
+  </div>
+   <div class = "col col-10 third-row"></div>
+</div>
+
+
+</div>
+
+
+</ion-view>
+</ion-tab>
+    
+
+
+
+
+
+
+    <ion-tab title="LEADERSHIP" ng-controller="AppCtrl">
+      
+<ion-view style="background: #3A4264;top: 8vh;">
+
+
+
+<div class="row" style="z-index: 5;
+    position: absolute;
+    flex-direction: row;
+   ">
+<div class="col col-80"></div>
+ <div  class="col col-10" style="height:2.5vh;background-color: #FDBC4D;-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+clip-path: polygon(50% 100%, 0 0, 100% 0);"><p></p></div>
+<div class="col col-10"></div>
+</div>
+
+
+
+
+
+    <div class = "row" 
+style="margin-top: 3vh;height: 12vh;">
+   <div class = "col col-20 first-row"><button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button></div>
+   <div class = "col col-80 col-center second-row"> <p style="color: #eaeaea;
+    font-size: 7vw;">LEADERSHIP TEAM</p></div>
+  
+</div>
+
+
+ <div class = "row" 
+style="height: 25vh;">
+   <div class = "col col-10"></div>
+   <div class = "col col-40" style="background-color: #505a7c;margin:0.5vw;text-align: center;">
+    
+          <img src="img/profilepic.png" style="width: 25vw;margin-top: 1vw;">
+         <p  style="color: #eaeaea;font-size: 3.7vw;margin: 0;">Abdul Razak Dawood</p>
+     <p style="color: #eaeaea;font-size: 3.5vw;margin: 0;">Chairman/CEO</p>
+             
+     
+   </div>
+
+   <div class = "col col-40" style="background-color: #505a7c;margin:0.5vw;text-align: center;">
+    
+          <img src="img/profilepic.png" style="width: 25vw;margin-top: 1vw;">
+         <p  style="color: #eaeaea;font-size: 3.7vw;margin: 0;">Taimur Dawood</p>
+     <p style="color: #eaeaea;font-size: 3.5vw;margin: 0;">Vice Chairman</p>
+             
+     
+   </div>
+
+
+   <div class = "col col-10"></div>
+</div>
+
+
+
+
+<div class = "row" 
+style="height: 25vh;">
+   <div class = "col col-10"></div>
+   <div class = "col col-40" style="background-color: #505a7c;margin:0.5vw;text-align: center;">
+    
+          <img src="img/profilepic.png" style="width: 25vw;margin-top: 1vw;">
+         <p  style="color: #eaeaea;font-size: 3.7vw;margin: 0;">Faisal Dawood</p>
+     <p style="color: #eaeaea;font-size: 3.5vw;margin: 0;">Cheif Financial Officer</p>
+             
+     
+   </div>
+
+   <div class = "col col-40" style="background-color: #505a7c;margin:0.5vw;text-align: center;line-height: 1.3;">
+    
+          <img src="img/profilepic.png" style="width: 25vw;margin-top: 1vw;">
+         <p  style="color: #eaeaea;font-size: 3.7vw;margin: 0;">Mr Khawar Khan</p>
+     <p style="color: #eaeaea;font-size: 3.5vw;margin: 0;">Cheif Risk and Compliance Officer</p>
+             
+     
+   </div>
+
+
+   <div class = "col col-10"></div>
+</div>
+
+
+
+
+
+
+
+<div class = "row" 
+style="height: 25vh;">
+   <div class = "col col-10"></div>
+   <div class = "col col-40" style="background-color: #505a7c;margin:0.5vw;text-align: center;line-height: 1.3;">
+    
+          <img src="img/profilepic.png" style="width: 25vw;margin-top: 1vw;">
+         <p  style="color: #eaeaea;font-size: 3.7vw;margin: 0;">Anwar Ul Haq</p>
+     <p style="color: #eaeaea;font-size: 3.5vw;margin: 0;">Division President Maintenance</p>
+             
+     
+   </div>
+
+   <div class = "col col-40" style="background-color: #505a7c;margin:0.5vw;text-align: center;">
+    
+          <img src="img/profilepic.png" style="width: 25vw;margin-top: 1vw;">
+         <p  style="color: #eaeaea;font-size: 3.7vw;margin: 0;">Naeem Ur Rashid</p>
+     <p style="color: #eaeaea;font-size: 3.5vw;margin: 0;">Cheif HR Officer</p>
+             
+     
+   </div>
+
+
+   <div class = "col col-10"></div>
+</div>
+
+
+
+
+
+
+
+</ion-view>
+    </ion-tab>
+  
+</ion-tabs>
+
+</ion-view>
+

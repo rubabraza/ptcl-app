@@ -1,0 +1,118 @@
+<ion-view>
+ <ion-content ng-controller="AppCtrl" style="background: #3A4264;background-size: cover;">
+
+<div class="row">
+	<div class="col col-10"></div>
+	<div class="col col-80" style="text-align: center;">
+		
+		<p class="signin-text">SIGN UP - STEP 3</p>
+
+	</div>
+	<div class="col col-10"></div>
+</div>
+
+
+
+<div class="row">
+<div class="col col-25"></div>
+
+ <div class="col col-50" style="text-align: center;">
+  <p style="background-color: #505a7c;border-radius: 50%;border: 5px solid #303754; text-align: center;" ng-show="dptwo" ng-click="loadImage()">
+       <i class="ion-ios-camera-outline" style="font-size:40vw;color: #303754;" ></i>
+
+          </p>
+ 
+    <img class="dp" ng-src="{{pathForImage(image)}}" ng-show="dp">
+
+  </div> 
+<div class="col col-25"></div> 
+</div>
+
+
+
+<div class="row">
+	<div class="col col-10"></div>
+	
+	 <div class="col col-80 hover-signin" style="margin-bottom: 1.5vh;">
+        
+          <i class="ion-pricetags" style="font-size: 10vw;color: #9DA1B2;padding-left:5vw;padding-right: 5vw;"></i>
+     	 <textarea class="signin-id ion-ios-search" style="resize: none;" type="text" ng-model='tagline' placeholder="Tagline"></textarea>
+     
+        
+
+       
+
+	</div>
+	<div class="col col-10"></div>
+</div>
+
+
+
+
+<div class="row" style="height: 25vh;">
+	<div class="col col-10"></div>
+	
+	 <div class="col col-80 hover-signin" style="margin-bottom: 1.5vh;">
+        
+          <i class="ion-information" style="font-size: 10vw;color: #9DA1B2;padding-left:5vw;padding-right: 5vw;"></i>
+     	 <textarea class="signin-id ion-ios-search" style="resize: none;" type="text" ng-model='desc' placeholder="An Interesting Description About You"></textarea>
+       
+
+	</div>
+	<div class="col col-10"></div>
+</div>
+
+<div class="row" style="height: 25vh;">
+	<div class="col col-10"></div>
+	
+	 <div class="col col-80 hover-signin" style="margin-bottom: 1.5vh;">
+        
+          <i class="ion-heart" style="font-size: 10vw;color: #9DA1B2;padding-left:5vw;padding-right: 5vw;"></i>
+     	 <textarea class="signin-id ion-ios-search" style="resize: none;" type="text" ng-model="hobbies" placeholder="Hobbies and Passion"></textarea>
+       
+
+	</div>
+	<div class="col col-10"></div>
+</div>
+
+
+
+
+<div class="row" style="height: 25vh;">
+	<div class="col col-10"></div>
+	
+	 <div class="col col-80 hover-signin" style="margin-bottom: 1.5vh;">
+        
+          <i class="ion-arrow-graph-up-right" style="font-size: 10vw;color: #9DA1B2;padding-left:5vw;padding-right: 5vw;"></i>
+     	 <textarea class="signin-id ion-ios-search" style="resize: none;" type="text" ng-model="aspir" placeholder="Short to Long Term Aspirations"></textarea>
+
+       
+
+	</div>
+	<div class="col col-10"></div>
+</div>
+
+
+<div class="row" style="margin-top: 1vh;">
+	<div class="col col-30"></div>
+	
+	 <div class="col col-40" style="border-radius: 5px;background:#e64c65;text-align: center;" ng-click="adding_data();signin_screen()">
+      
+
+      <p class="signin-text" style="">DONE</p>
+
+
+	</div>
+	<div class="col col-30"></div>
+</div>
+
+
+
+
+
+
+
+
+
+ </ion-content>
+  </ion-view>
